@@ -9,6 +9,7 @@
   </head>
 </head>
 <body>
+  {% include 'nav.html' %}
     <div class="container">
     <h1 class="text-center mt-2 mb-4">IT Careers</h1>
     <img class='img-fluid'src="https://images.unsplash.com/photo-1580894908361-967195033215?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" height="320"/>
@@ -20,11 +21,10 @@
           {% include 'jobitem.html'%}
         {% endfor %}
     </div>
-   
     <div class="text-center">
-    <button class="btn btn-primary btn-lg">Contact Us</button>
-      <p class="text-center">Copyright 2023</p>
+    <a href="mailto:enj.aihara@gmail.com?subject=Question%20about%20job%20openings&body=My%20name%3A%20%3Cyour%20name%20here%3E%0D%0AMy%20Question%3A" type="button" class="btn btn-primary btn-lg"> Contact Us</a>
     </div
+      {% include 'footer.html' %}
     </div>
 </body>
 </html>
